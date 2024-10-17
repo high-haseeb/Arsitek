@@ -7,7 +7,7 @@ import { EffectComposer, N8AO } from "@react-three/postprocessing"
 import { BallCollider, Physics, RigidBody, CylinderCollider } from "@react-three/rapier"
 
 THREE.ColorManagement.legacyMode = false
-const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "red" })
+const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "lightpink" })
 const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000", envMapIntensity: 20 })
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
 const baubles = [...Array(50)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
