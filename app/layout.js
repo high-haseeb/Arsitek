@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Arsitek",
+  title: "Rocket Revenue",
   description: "made by high-haseeb",
 };
 
