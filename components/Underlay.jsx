@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Underlay() {
     return (
         <div
@@ -14,29 +16,13 @@ export function Underlay() {
                 justifyContent: "flex-start",
                 pointerEvents: "none",
             }}>
-            <div style={{ width: "100%", padding: 0, display: "inline-flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-                <p
-                    style={{
-                        fontFamily: "'Antonio', sans-serif",
-                        flex: "1 1 0%",
-                        height: 30,
-                        fontSize: 30,
-                        fontWeight: "700",
-                        lineHeight: "30px",
-                        color: "black",
-                        letterSpacing: -2,
-                    }}>
-                    ARSITEK
-                </p>
-                <div style={{ flex: "1 1 0%", display: "flex", gap: "2em" }}></div>
-                <p style={{ flex: "1 1 0%", height: 30, fontSize: 30, lineHeight: "30px", textAlign: "right", color: "black" }}>⎑</p>
-            </div>
-            <div style={{ height: 60 }} />
+            <Image src={'/logo.png'} width={200} height={100} alt="logo" className="invert absolute top-10 left-4" />
+            <div style={{ height: 100 }} />
             <div style={{ width: "100%", padding: 0, display: "inline-flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "center" }}>
                 <p style={{ flex: "1 1 0%", height: "100%", fontSize: 12, lineHeight: "1.5em", color: "black" }}>
-                    <b>Elegant, Sleek, Modern</b>
+                    <b className="text-xl">MAKE YOUR BUSINESS FLY</b>
                     <br />
-                    Web Design Agency
+                    LÖNSAM DIGITAL MARKNADSFÖRING
                     <br />
                     <b>—</b>
                 </p>
@@ -68,9 +54,9 @@ export function Underlay() {
                     alignItems: "flex-end",
                     justifyContent: "center",
                 }}>
-                <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "1em", color: "black", margin: 0, letterSpacing: -10 }}>X</p>
+                <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "1em", color: "black", margin: 0, letterSpacing: -10 }}>R</p>
                 <div style={{ width: 10 }} />
-                <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "100%", textAlign: "right", color: "black", margin: 0, letterSpacing: -10 }}>_01</p>
+                <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "100%", textAlign: "right", color: "black", margin: 0, letterSpacing: -10 }}>_R</p>
             </div>
             <div style={{ height: 60 }} />
             <div
@@ -85,9 +71,9 @@ export function Underlay() {
                     justifyContent: "center",
                 }}>
                 <p className="full" style={{ whiteSpace: "nowrap", flex: "1 1 0%", fontSize: 12, lineHeight: "1.5em", color: "black" }}>
-                    <b>Wonders in Third Dimension</b>
+                    <b>VI SKAPAR LÖNSAM TILLVÄXT </b>
                     <br />
-                    ARSITEK
+                    Rocket Revenue
                 </p>
                 <div style={{ width: 10 }} />
                 <p
@@ -103,21 +89,12 @@ export function Underlay() {
                         letterSpacing: -0.5,
                         whiteSpace: "nowrap",
                     }}>
-                    THE SUMMIT OF THE MANY
+                    ACCELERERA MED ROCKET PERFORMANCE
+                    MA​RKETING
                 </p>
                 <div style={{ width: 10 }} />
                 <p className="full" style={{ flex: "1 1 0%", fontSize: 12, lineHeight: "1em", textAlign: "right", color: "black" }}></p>
             </div>
-        </div>
-    )
-}
-
-export function Overlay() {
-    return (
-        <div style={{ position: "absolute", bottom: 40, right: 40 }}>
-            <p style={{ flex: "1 1 0%", fontSize: 12, lineHeight: "1em", textAlign: "right", color: "black" }}>
-                {/* <a href="http://pmnd.rs/">pmnd.rs</a> <a href="https://github.com/pmndrs">git</a> <a href="https://codesandbox.io/s/zxpv7">csb</a> */}
-            </p>
         </div>
     )
 }

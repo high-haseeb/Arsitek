@@ -1,12 +1,11 @@
 import { App } from "@/components/App"
-import { Underlay, Overlay } from "@/components/Underlay"
+import { Underlay } from "@/components/Underlay"
 
 const Page = () => {
   return (
     <>
       <Underlay />
       <App />
-      <Overlay />
     </>
   )
 }
